@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Price Oracle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+</head>
+
+<body>
+    <h1>Crypto Price Oracle</h1>
+
+    <div class="container">
+        <div class="row">
+            <button onclick="fetchPrice('ETH')">Get ETH Price</button>
+            <div class="price-box" id="eth-price">$0.00</div>
+        </div>
+        <div class="row">
+            <button onclick="fetchPrice('BTC')">Get BTC Price</button>
+            <div class="price-box" id="btc-price">$0.00</div>
+        </div>
+        <div class="row">
+            <button onclick="fetchPrice('LINK')">Get LINK Price</button>
+            <div class="price-box" id="link-price">$0.00</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
